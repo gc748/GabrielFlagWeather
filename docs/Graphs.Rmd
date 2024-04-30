@@ -1,0 +1,26 @@
+---
+title: "Graphs"
+author: "Gabriel Cage-Sepeda"
+date: "2024-04-30"
+output: pdf_document
+---
+
+```{r message=FALSE, warning=FALSE}
+library(tidyverse)
+library(GabrielFlagWeather)
+```
+
+## DATE v SNOW
+```{r message=FALSE, warning=FALSE}
+ggplot(Flagstaff_Weather, aes(x=DATE, y=SNOW)) +
+  geom_point() +
+  xlab("DATE")
+```
+
+## DATE v PRCP
+```{r message=FALSE, warning=FALSE}
+ggplot(Flagstaff_Weather, aes(x=DATE, y=PRCP)) +
+  geom_point() +
+  xlab("DATE")
+```
+
